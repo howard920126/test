@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://howard920126.github.io/test/</loc>
+  <lastmod>2024-11-20T07:00:59+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://howard920126.github.io/test/index.html</loc>
+  <lastmod>2024-11-20T07:00:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://howard920126.github.io/test/a1.html</loc>
+  <lastmod>2024-11-20T07:00:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://howard920126.github.io/test/a2.html</loc>
+  <lastmod>2024-11-20T07:00:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://howard920126.github.io/test/a3.html</loc>
+  <lastmod>2024-11-20T07:00:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://howard920126.github.io/test/a5.html</loc>
+  <lastmod>2024-11-20T07:00:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://howard920126.github.io/test/a6.html</loc>
+  <lastmod>2024-11-20T07:00:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://howard920126.github.io/test/a4.html</loc>
+  <lastmod>2024-11-20T07:00:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
