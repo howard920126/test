@@ -12,34 +12,54 @@
   <script type="text/javascript" src="js/jquery.easing.min.js"></script>
   <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
   <script type="text/javascript">
-    $(function() {
+    $(function () {
       $("#lava_menu").lavaLamp({
         fx: "backout",
-        speed: 700
+        speed: 700,
       });
     });
   </script>
-    <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
-    <script type="text/javascript">
-    $(window).load(function() {
-        $('#slider').nivoSlider();
+  <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+  <script type="text/javascript">
+    $(window).load(function () {
+      $('#slider').nivoSlider();
     });
-    </script>
+  </script>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X8NBWFM0LT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8NBWFM0LT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-X8NBWFM0LT');
+  </script>
+  <script type="text/javascript">
+    // 動態改變文字大小並顯示「生日快樂」
+    document.addEventListener("DOMContentLoaded", function () {
+      const inputField = document.getElementById("id1");
+      const resultParagraph = document.getElementById("p1");
 
-  gtag('config', 'G-X8NBWFM0LT');
-</script>
+      inputField.addEventListener("input", function () {
+        const inputValue = this.value; // 獲取輸入框的值
+
+        // 判斷是否為有效數字
+        if (!isNaN(inputValue) && inputValue > 0) {
+          resultParagraph.style.fontSize = inputValue + "px"; // 更新字體大小
+          resultParagraph.innerText = "生日快樂"; // 顯示「生日快樂」
+        } else {
+          resultParagraph.innerText = "請輸入有效的數字"; // 無效輸入的提示
+        }
+      });
+    });
+  </script>
 </head>
 
 <body>
-  <div id="main">	
-    <div id="site_content">  
-	  <div id="menubar">
+  <div id="main">
+    <div id="site_content">
+      <div id="menubar">
         <ul class="lavaLampWithImage" id="lava_menu">
           <li class="current"><a href="index.html">首頁</a></li>
           <li><a href="a1.html">第1題</a></li>
@@ -49,63 +69,118 @@
           <li><a href="a5.html">GA圖片</a></li>
           <li><a href="a6.html">挑戰題</a></li>
         </ul>
-	  </div><!--close menubar-->
-      <div id="header">  
-        <h1>110310310林新皓</h1>	
-	    <h2>Company Slogan Goes Here</h2>
-      </div><!--close header-->	
-	  <div id="banner_image">
-	    <div id="slider-wrapper">        
+      </div>
+      <!--close menubar-->
+      <div id="header">
+        <h1>110310310林新皓</h1>
+        <h2>Company Slogan Goes Here</h2>
+      </div>
+      <!--close header-->
+      <div id="banner_image">
+        <div id="slider-wrapper">
           <div id="slider" class="nivoSlider">
             <img src="images/slide1.jpg" alt="" />
             <img src="images/slide2.jpg" alt="" />
             <img src="images/slide3.jpg" alt="" />
-		  </div><!--close slider-->
-		</div><!--close slider-wrapper-->
-	  </div><!--close banner_image-->		  
+          </div>
+          <!--close slider-->
+        </div>
+        <!--close slider-wrapper-->
+      </div>
+      <!--close banner_image-->
       <div id="content">
         <div class="content_item">
-          <h1>Welcome to your website</h1>
-          <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under the Creative Commons Attribution 3.0 Licence), which means that you are free to download and use it for anything you want (including modifying and amending it). If you wish to remove the 'ARaynorDesign' link in the footer of the template, please contact me first, but other than that...</p>
+          <h1 class="s4">挑戰題(4分)</h1>
+          <hr />
+          <p class="s3">
+            <label>輸入數字:</label>
+            <input class="s2" type="text" id="id1" placeholder="輸入文字大小(px)" />
+          </p>
+          <p class="s2" id="p1">請輸入數字以改變文字大小</p>
+
+          <p>
+            This standards compliant, simple, fixed width website template is
+            released as an 'open source' design (under the Creative Commons
+            Attribution 3.0 Licence), which means that you are free to download
+            and use it for anything you want (including modifying and amending
+            it). If you wish to remove the 'ARaynorDesign' link in the footer of
+            the template, please contact me first, but other than that...
+          </p>
           <h3>Place your heading here</h3>
-          <div style="width:200px; float:left; padding: 0px 20px 10px 0px;"><img alt="image" src="images/image.jpg" /></div>
-          <p>This website template uses the fancybox jquery tool to enhance the website, click on the image to the right to see. </p>
-          <p>Ut tincidunt, ante vel fermentum iaculis, turpis sem pulvinar diam, sit amet ullamcorper nibh dui ac nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos:</p>
-          <p>Vestibulum tempus urna vitae neque vehicula sit amet tristique felis ultrices. Phasellus eu laoreet mauris. Integer sit amet ante nec ipsum euismod hendrerit et eget sapien. Duis velit ante, semper nec dapibus adipiscing, pellentesque vitae orci. Etiam adipiscing, justo ut faucibus placerat, neque libero accumsan ipsum, non pellentesque ligula nibh id justo. Aenean tellus nisl, bibendum vitae sollicitudin id, faucibus ut mi.</p>
-          <p>Vestibulum tempus urna vitae neque vehicula sit amet tristique felis ultrices. Phasellus eu laoreet mauris. Integer sit amet ante nec ipsum euismod hendrerit et eget sapien. Duis velit ante, semper nec dapibus adipiscing, pellentesque vitae orci. Etiam adipiscing, justo ut faucibus placerat, neque libero accumsan ipsum, non pellentesque ligula nibh id justo. Aenean tellus nisl, bibendum vitae sollicitudin id, faucibus ut mi.</p>
-		</div><!--close content_item-->	
-	      
-		<div class="sidebar_container">   		  
-		  <div class="sidebar">
-            <div class="sidebar_item">
-                <h2>Latest Blog</h2>
-			    <h4>April 2012</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
-		          <a href="#">Read more</a>
-              </div><!--close sidebar_item--> 
-          </div><!--close sidebar-->     		
-		  <div class="sidebar">
+          <div style="width: 200px; float: left; padding: 0px 20px 10px 0px">
+            <img alt="image" src="images/image.jpg" />
+          </div>
+          <p>
+            This website template uses the fancybox jquery tool to enhance the
+            website, click on the image to the right to see.
+          </p>
+          <p>
+            Ut tincidunt, ante vel fermentum iaculis, turpis sem pulvinar diam,
+            sit amet ullamcorper nibh dui ac nibh. Class aptent taciti sociosqu
+            ad litora torquent per conubia nostra, per inceptos himenaeos:
+          </p>
+          <p>
+            Vestibulum tempus urna vitae neque vehicula sit amet tristique
+            felis ultrices. Phasellus eu laoreet mauris. Integer sit amet ante
+            nec ipsum euismod hendrerit et eget sapien. Duis velit ante, semper
+            nec dapibus adipiscing, pellentesque vitae orci. Etiam adipiscing,
+            justo ut faucibus placerat, neque libero accumsan ipsum, non
+            pellentesque ligula nibh id justo. Aenean tellus nisl, bibendum
+            vitae sollicitudin id, faucibus ut mi.
+          </p>
+        </div>
+        <!--close content_item-->
+        <div class="sidebar_container">
+          <div class="sidebar">
             <div class="sidebar_item">
               <h2>Latest Blog</h2>
-		  	  <h4>April 2012</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
-		        <a href="#">Read more</a>
-            </div><!--close sidebar_item--> 
-          </div><!--close sidebar-->  
-		  <div class="sidebar">
+              <h4>April 2012</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque cursus tempor enim.
+              </p>
+              <a href="#">Read more</a>
+            </div>
+            <!--close sidebar_item-->
+          </div>
+          <!--close sidebar-->
+          <div class="sidebar">
             <div class="sidebar_item">
               <h2>Latest Blog</h2>
-			  <h4>April 2012</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
-		        <a href="#">Read more</a>
-            </div><!--close sidebar_item--> 
-          </div><!--close sidebar-->  
-        </div><!--close sidebar_container-->	
-       <br style="clear:both;" />
-      </div><!--close content-->	
-    </div><!--close site_content-->	
-    <div id="footer">  
+              <h4>April 2012</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque cursus tempor enim.
+              </p>
+              <a href="#">Read more</a>
+            </div>
+            <!--close sidebar_item-->
+          </div>
+          <!--close sidebar-->
+          <div class="sidebar">
+            <div class="sidebar_item">
+              <h2>Latest Blog</h2>
+              <h4>April 2012</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque cursus tempor enim.
+              </p>
+              <a href="#">Read more</a>
+            </div>
+            <!--close sidebar_item-->
+          </div>
+          <!--close sidebar-->
+        </div>
+        <!--close sidebar_container-->
+        <br style="clear: both" />
+      </div>
+      <!--close content-->
+    </div>
+    <!--close site_content-->
+    <div id="footer">
       版權所有，&copy; designed by 林新皓</a>，2024
-  </div><!--close main-->	
+    </div>
+    <!--close main-->
 </body>
+
 </html>
